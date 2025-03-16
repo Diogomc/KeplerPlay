@@ -1,15 +1,14 @@
 'use client'
 
 import { Home } from "@/components/Home";
-import { MainBanner } from "@/components/MainBanner";
 import { Nav } from "@/components/nav/Nav";
+import { Main } from "@/components/main/Main";
 
 export default function Page() {
   return (
     <div>
       <Nav/>
-      <MainBanner/>
-   
+      <Main/>
        <Home/>
 
     </div>

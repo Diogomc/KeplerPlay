@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        title: ['Roboto', 'Arial']
+        title: ['Roboto', 'Arial', 'Barriecito']
       },
       colors: {
         background: "var(--background)",

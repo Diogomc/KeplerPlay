@@ -40,9 +40,17 @@
     padding: 8px;
     border-radius: 6px;
 }
-.img-main-movie{
-    width: 100%;
-    height: 100%;
-    border-radius:30px;
-    padding: 20px;
+
+@media screen and (max-width: 480px) {
+    .main-title{
+        background-image: url(/banner-mobile.jpg);
+        background-position: center;
+    }
+    .ul-main-movie{
+        background: none;
+        position: inherit;
+    }
+    .information-main-movie{
+        color: #fff;
+    }
 }

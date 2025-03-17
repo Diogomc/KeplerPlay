@@ -1,0 +1,56 @@
+.container-plans{
+    margin: 100px 0 130px 0;
+}
+.plans-list{
+    display: flex;
+    justify-content: center;
+}
+.plans-cards{
+    background-color: #191919;
+    margin: 10px;
+    height: 500px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 10px;
+}
+.title-plan-card{
+    font-size: 2rem;
+    border-bottom: 1px solid #414141;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+.btn-plan{
+    background-color: brown;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.btn-plan:hover{
+    background-color: #ccc;
+    color: #191919;
+    border: brown;
+    transition: 0.9s;
+}
+.benefits-text{
+    font-size: 0.9rem;
+}
+.price-text{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.month{
+    color: #454545;
+}
+
+@media screen and (max-width: 480px) {
+    .plans-list{
+        flex-direction: column;
+    }
+    .plans-cards{
+        width: 100%;
+    }
+}

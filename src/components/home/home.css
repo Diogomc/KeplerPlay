@@ -38,3 +38,9 @@
     object-position: top;
     border-radius: 10px 10px 0 0;
 }
+
+@media screen and (max-width: 480px) {
+    .container-home-movies{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

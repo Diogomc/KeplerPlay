@@ -49,8 +49,10 @@
 @media screen and (max-width: 480px) {
     .plans-list{
         flex-direction: column;
+        padding: 10px;
     }
     .plans-cards{
         width: 100%;
+        margin: 20px 0 0 0;
     }
 }

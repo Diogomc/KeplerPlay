@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #121212;
+  --background: #000;
   --grey-color: #1e1e1e;
 }
 
@@ -17,73 +17,7 @@
 * {
   font-family: 'Roboto';
 }
-
-body {
-  box-sizing: border-box;
-  padding: 0 auto;
-  margin: 0 auto;
+body{
   background-color: var(--background);
   color: #fff;
-}
-
-
-.card-movie {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 10px;
-  justify-content: center;
-  align-items: start;
-  padding: 80px;
-}
-
-.text-average {
-  font-size: 15px;
-  text-align: center;
-  background-color: var(--grey-color);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  height: 20px;
-}
-
-.text-overview {
-  padding: 20px;
-  height: 200px;
-  text-align: center;
-  background-color: #cccc;
-  border-radius: 0 0 20px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-}
-
-.title {
-  font-size: 30px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100%;
-  padding: 30px;
-}
-.img-movie{
-  border-radius: 20px 0 0 0;
-
-}
-.img-movie:hover {
-  background-color: #000;
-  opacity: 0.6;
-  transition: 0.2s;
-}
-.banner-video{
-  width: 100vw;
-  object-fit: cover;
-  height: 900px;
-}
-@media screen and (max-width: 450px) {
-  
-  .banner-video{
-    max-width: 100%;
-    height: 600px;
-  }
 }

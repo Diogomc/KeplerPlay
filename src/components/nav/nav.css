@@ -134,4 +134,30 @@ header{
         right: 0;
         background-color: #191919;
     }
+    .btn-close-modal{
+        margin-left: 0;
+    }
+    .modal-title-area{
+        align-items: center;
+        text-align: center;
+        width: 130%;
+        justify-content: space-around;
+    }
+    .modal-opened{
+        position: fixed;
+        top: 20%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .input-modal{
+        width: 300px;
+    }
 }

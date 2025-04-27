@@ -1,3 +1,4 @@
+
 .menu{
     display: flex;
     justify-content: space-between;
@@ -5,6 +6,7 @@
     padding: 20px;
     width: 100%;
     background-color: #191919;
+    z-index: 999;
 }
 header{
     display: flex;
@@ -51,7 +53,7 @@ header{
 .modal-opened{
     position: fixed;
     top: 20%;
-    left: 55%;
+    left: 30%;
     background-color: #fff;
     width: 40%;
     padding: 10px;
@@ -61,6 +63,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 999;
 }
 .modal-closed{
     display: none;
@@ -133,6 +136,7 @@ header{
         left: 0;
         right: 0;
         background-color: #191919;
+        
     }
     .btn-close-modal{
         margin-left: 0;

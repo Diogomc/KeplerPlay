@@ -1,9 +1,14 @@
 import '@/components/plans/plans.css';
+import {motion} from "framer-motion"
 export const Plans = () => {
     return (
         <div className="container-plans">
             <h2 className='text-5xl p-20 text-center'>Conheça nossos planos</h2>
-            <div className="plans-list">
+            <motion.div className="plans-list"
+            initial={{opacity: 0, x: -100}}
+            whileInView={{opacity: 1, x: 0}}
+            exit={{opacity: 0, x: -100}}
+            transition={{duration: 0.7}}>
 
                 <div className='plans-cards'>
                     <h2 className='title-plan-card'>Semanal</h2>
@@ -36,7 +41,7 @@ export const Plans = () => {
                     </div>
                 </div>
 
-                <div className='plans-cards'>
+                <motion.div className='plans-cards'>
 
                     <h2 className='title-plan-card'>Anual</h2>
                     <div className="benefits">
@@ -52,8 +57,8 @@ export const Plans = () => {
                             <button className="btn-plan"><a href="#">Escolher esse plano</a></button>
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
         </div>
     )
 }
